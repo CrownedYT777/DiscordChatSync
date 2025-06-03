@@ -1,0 +1,39 @@
+name: DiscordChatSync
+version: '1.0.0'
+main: dev.ayanhalder.discordchatsync.DiscordChatSync
+api-version: '1.21'
+author: Ayan Halder
+description: A lightweight Discord-Minecraft chat synchronization plugin
+website: https://github.com/ayanhalder
+
+commands: {}
+
+
+name: DiscordChatSync
+version: '${project.version}'
+main: dev.ayanhalder.discordchatsync.DiscordChatSync
+api-version: '1.21'
+author: ayanhalder
+description: A lightweight Discord-Minecraft chat synchronization plugin
+commands:
+  discord:
+    description: Main command for DiscordChatSync
+    usage: /discord reload|status
+    permission: discordchatsync.admin
+
+permissions: {}
+name: DiscordChatSync
+version: 1.0.0
+main: dev.ayanhalder.discordchatsync.DiscordChatSync
+api-version: 1.21
+description: Sync chat between Minecraft and Discord
+author: AyanHalder
+commands:
+  discordchatsync:
+    description: Main command for DiscordChatSync
+    aliases: [dcs]
+    permission: discordchatsync.admin
+permissions:
+  discordchatsync.admin:
+    description: Allows access to all DiscordChatSync commands
+    default: op
