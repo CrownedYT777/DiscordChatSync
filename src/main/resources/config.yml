@@ -1,0 +1,48 @@
+# DiscordChatSync Configuration
+
+# Discord Bot Configuration
+discord:
+  # Your Discord bot token (required)
+  token: ""
+  #Your discord server Channel ID to sync the messages to (required)
+  channel-id: ""
+
+# Debug mode - set to true for additional logging
+debug: false
+
+# Discord trigger-response system
+# Syntax is {"TRIGGER": "RESPONSE", "TRIGGER": "RESPONSE", ...}
+# If you do not want any canned responses, set this to just {}
+discord_canned_responses: {"ip": "play.your-server-ip.fun", "website": ”https://yourwebsite.com"}
+
+# Message configuration
+messages:
+  # Chat messages from Minecraft to Discord
+  chat:
+    enabled: true
+    format: "**%player%**: %message%"
+
+  # Player join events
+  join:
+    enabled: true
+
+  # Player leave events
+  leave:
+    enabled: true
+
+  # Player death events
+  death:
+    enabled: true
+
+  # Player advancement events
+  advancement:
+    enabled: true
+    format: "🏆 **%player%** has made the advancement **%advancement%**"
+
+  # Server events
+  server:
+    enabled: true
+    start:
+      format: "✅ **Server has started**"
+    stop:
+      format: "🛑 **Server has stopped**"
